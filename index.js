@@ -10,15 +10,16 @@ function sendMail() {
         reply_to: email
     };
     
+    // Utilisez emailjs.sendForm pour envoyer l'e-mail
     emailjs.sendForm("service_64d12im", "template_ejxp884", templateParams)
         .then(function(response) {
-            // Remplacez le message de console.log par une alerte de succès
+            // Gérer le succès de l'envoi de l'e-mail ici
             alert("Email envoyé avec succès!");
-            // Vous pouvez également ajouter d'autres actions à effectuer après le succès de l'envoi.
         })
         .catch(function(error) {
-            // Remplacez le message de console.log par une alerte d'erreur
-            alert("Erreur lors de l'envoi de l'email");
-            // Vous pouvez également ajouter d'autres actions à effectuer en cas d'erreur d'envoi.
+            // Gérer les erreurs d'envoi de l'e-mail ici
+            alert("Erreur lors de l'envoi de l'e-mail");
         });
+
+    return false; // Empêche le formulaire de se soumettre normalement
 }
