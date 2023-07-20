@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheConquest</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">The Conquest</a></h2>
+
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="#" class="nav_link">Acceuil</a></li>
+            <li><a href="#" class="nav_link">   </a></li>
+            <li><a href="#" class="nav_link">   </a></li>
+            <li><a href="#" class="nav_link">Devenir staff</a></li>
+            <li><a href="#" class="nav_link">   </a></li>
+            <li><a href="#" class="nav_link">   </a></li>
+          </ul>
+          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>Vous voulez plus d'infos ?<br /> Les Voilà...</h2>
+            <p>L'événement débutera par une phase de préparation, où les équipes participantes seront formées et recevront les informations nécessaires pour se joindre à l'aventure. Ensuite, les équipes seront téléportées vers des emplacements aléatoires sur la map, où elles devront explorer, collecter des ressources, construire des abris et s'approvisionner en nourriture. Au fur et à mesure que le temps passe, une zone délimitée commencera à se rétrécir progressivement, forçant les équipes à se rapprocher les unes des autres. Cela créera des rencontres inévitables et des combats intenses, donnant lieu à des affrontements PvP palpitants. La stratégie, la gestion des ressources et l'habileté au combat seront essentielles pour survivre et éliminer les autres équipes. Les équipes devront faire preuve de prudence, d'ingéniosité et de coopération pour surpasser leurs adversaires et atteindre la victoire finale.</p>
+          </div>
+          <div class="column">
+            <img src="images/hero.png" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+      </section>
+      <!-- Hero End-->
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+  </body>
+</html>

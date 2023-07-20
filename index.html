@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheConquest</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">The Conquest</a></h2>
+
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="index.html" class="nav_link">Acceuil</a></li>
+            <li><a href="#" class="nav_link">   </a></li>
+            <li><a href="#" class="nav_link">   </a></li>
+            <li><a href="contact.html" class="nav_link">Devenir staff</a></li>
+            <li><a href="#" class="nav_link">   </a></li>
+            <li><a href="#" class="nav_link">   </a></li>
+          </ul>
+          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>Le meilleur event minecraft<br /> BEDROCK</h2>
+            <p>The Conquest, est un event minecraft bedrock, sur une map a la wordbarrer grande pendant la phase de minage, et a la wordbarrer petite pendant la phase de pvp, se veront s'affronter plusieurs équipe representante de différent serveur discord </p>
+            <div class="buttons">
+              <a href="info.html"><button class="btn">Plus D'info</button></a>
+              <a href="https://discord.gg/WUEFQpZHrN"><button class="btn">Jouer</button></a>
+            </div>
+          </div>
+          <div class="column">
+            <img src="images/hero.png" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+      </section>
+      <!-- Hero End-->
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+  </body>
+</html>
